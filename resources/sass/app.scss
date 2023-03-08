@@ -1,0 +1,28 @@
+// Fonts
+// @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+// @import url('https://fonts.googleapis.com/css?family=Lato');
+// @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+// @import url('https://fonts.googleapis.com/css?family=Tilt+Neon');
+
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
+
+// @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@import url('https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css');
+@import url('sweetalert2/dist/sweetalert2.min.css');
+
+// Variables
+@import 'variables';
+
+$font-family:'Ubuntu';
+
+.v-application {
+  [class*='text-'] {
+    color: #6e7077;
+    font-family: $font-family, sans-serif !important;
+  }
+  font-family: $font-family, sans-serif !important;
+}

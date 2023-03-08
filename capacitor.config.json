@@ -1,0 +1,6 @@
+{
+  "appId": "com.wasantara.app",
+  "appName": "wasantara",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
