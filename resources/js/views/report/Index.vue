@@ -42,7 +42,7 @@
 
     <v-divider></v-divider>
     <component
-      :is="moduleName == 'Tahanan' ? 'ResultIndex' : 'ResultBarangBukti'"
+      :is="'ResultIndex'"
       v-show="result"
       ref="result"
       :options="{ params: params, moduleName: moduleName }"
