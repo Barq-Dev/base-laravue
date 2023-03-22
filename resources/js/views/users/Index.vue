@@ -1,6 +1,7 @@
 <template>
-  <v-card elevation="2" class="rounded-lg">
+  <div class="rounded-lg">
     <DataTable
+      class="borderless"
       @saved="saved"
       :moduleName="moduleName"
       title="User List"
@@ -24,7 +25,7 @@
         </v-icon>
       </template>
     </DataTable>
-  </v-card>
+  </div>
 </template>
 <script>
 import DataTable from "@/components/DataTable";

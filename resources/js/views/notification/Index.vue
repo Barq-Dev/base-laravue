@@ -1,11 +1,13 @@
 <template>
-  <v-card elevation="2">
+  <div>
     <DataTable
-    ref="table"
+      class="borderless"
+      ref="table"
       clickable
       :btnEdit="false"
       :btnAdd="false"
       :freeze="false"
+      :title="title"
       :moduleName="moduleName"
       :headers="headers"
       :slots="slots"
@@ -37,7 +39,7 @@
         </v-icon>
       </template>
     </DataTable>
-  </v-card>
+  </div>
 </template>
 <script>
 import DataTable from "@/components/DataTable";
@@ -48,6 +50,7 @@ export default {
   },
   data() {
     return {
+      title: "Daftar Notifikasi",
       moduleName: "Notification",
       slots: ["message", "time", "status"],
       headers: [
@@ -60,10 +63,10 @@ export default {
   },
   methods: {
     ...mapActions("auth", ["markAsRead"]),
-    async read(item){
-      await this.markAsRead(item)
-      this.$refs.table.load()
-    }
+    async read(item) {
+      await this.markAsRead(item);
+      this.$refs.table.load();
+    },
   },
 };
 </script>

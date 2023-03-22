@@ -788,6 +788,13 @@ export default {
 tbody tr:nth-of-type(odd) {
   background-color: rgba(0, 0, 0, 0.05);
 }
+.borderless td,
+.borderless th {
+  border-bottom: 0 !important;
+}
+.borderless .v-data-footer {
+  border-top: 0 !important;
+}
 
 .freeze > div > table > tbody > tr > td:nth-child(2) {
   position: sticky !important;

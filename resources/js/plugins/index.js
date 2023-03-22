@@ -11,7 +11,6 @@ const options = {
 };
 Vue.use(VueSweetalert2, options);
 
-import 'chartjs-plugin-labels';
 import VueNumber from 'vue-number-animation'
 Vue.use(VueNumber)
 
@@ -44,8 +43,8 @@ Vue.use(TiptapVuetifyPlugin, {
   iconsGroup: 'md'
 })
 
-import ECharts from 'vue-echarts'
-import 'echarts'
+// import ECharts from 'vue-echarts'
+// import 'echarts'
 // import { use } from 'echarts/core'
 
 // // import ECharts modules manually to reduce bundle size
@@ -69,5 +68,5 @@ import 'echarts'
 // ]);
 
 // register globally (or you can do it locally)
-Vue.component('v-chart', ECharts)
+// Vue.component('v-chart', ECharts)
 Vue.use(CKEditor)
