@@ -14,7 +14,7 @@ var path = require('path');
 
 mix.options({
     hmrOptions: {
-        host: 'base-laravue.test',  // mysite.test is my local domain used for testing
+        host: 'laravue.test',  // mysite.test is my local domain used for testing
         port: 8080,
     }
 })

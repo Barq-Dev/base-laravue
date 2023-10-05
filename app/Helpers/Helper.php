@@ -23,7 +23,7 @@ if (!function_exists('auto_module')) {
         write_file(resource_path('js/router/routes.js'), "'$module_name', \n\t\t", '// #Autocrud#');
 
 
-        $base_path = base_path('packages/barq-dev/autocrud/src/Resources/js/vue/views/base');
+        $base_path = base_path('vendor/barq-dev/autocrud/src/Resources/js/vue/views/base');
         $dest_path = resource_path("js/views/" . \Str::snake($module_name));
         \File::copyDirectory($base_path, $dest_path);
 
@@ -35,7 +35,7 @@ if (!function_exists('auto_module')) {
 // if (!function_exists('copy_dir')) {
 //     function copy_dir($path, $destination)
 //     {
-//         $base_path = base_path('packages/barq-dev/autocrud/src/Resources/js/vue/views/base');
+//         $base_path = base_path('vendor/barq-dev/autocrud/src/Resources/js/vue/views/base');
 //         $dest_path = resource_path("js/views/" . \Str::snake($module_name));
 //         \File::copyDirectory($base_path, $dest_path);
 //     }
