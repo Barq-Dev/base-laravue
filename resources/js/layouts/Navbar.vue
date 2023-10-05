@@ -58,7 +58,7 @@
               dot
               :value="notifications.unRead.length"
             >
-              <v-icon>mdi-bell</v-icon>
+              <v-icon>mdi-bell-outline</v-icon>
             </v-badge>
           </v-btn>
         </template>
@@ -124,7 +124,7 @@
         <template v-slot:activator="{ on }">
           <v-btn text v-on="on">
             <!-- <span>{{ $store.state.auth.user.name }}</span> -->
-            <v-icon>mdi-account</v-icon>
+            <v-icon>mdi-account-outline</v-icon>
             <v-icon right>expand_more</v-icon>
           </v-btn>
         </template>
@@ -136,7 +136,7 @@
           <v-list-item router to="/profile">
             <v-list-item-title class="caption"> Profile </v-list-item-title>
             <v-list-item-icon
-              ><v-icon color="grey darken-1">mdi-account</v-icon></v-list-item-icon
+              ><v-icon color="grey darken-1">mdi-account-outline</v-icon></v-list-item-icon
             >
           </v-list-item>
           <!-- <v-list-item router to="/">
@@ -159,7 +159,7 @@
     </v-app-bar>
 
     <v-card max-width="375" class="mx-auto rounded-0">
-      <v-navigation-drawer v-model="drawer" src="/images/sidebar/sid-1.jpg" app>
+      <v-navigation-drawer v-model="drawer" :src="null" app>
         <v-img
           gradient="to top, rgba(0, 0, 0, 0.6) 0%, transparent 100px"
           src="/images/sidebar/cover-1.jpg"
@@ -221,7 +221,7 @@
               router
               exact
               :to="link.route"
-              active-class="border white--text blue"
+              active-class="border white--text blue lighten-2"
               dense
             >
               <v-list-item-action>
@@ -273,7 +273,7 @@
               :prepend-icon="link.icon"
               :color="$appInfo.theme.primary"
               no-action
-              active-class="border white--text blue"
+              active-class="border white--text blue lighten-2"
             >
               <v-icon
                 slot="prependIcon"
@@ -297,7 +297,7 @@
                   dense
                   class="submenu"
                   :to="child.route"
-                  active-class="border white--text blue"
+                  active-class="border white--text blue lighten-2"
                 >
                   <v-list-item-action>
                     <v-icon>{{ child.icon }}</v-icon>

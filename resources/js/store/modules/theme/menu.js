@@ -1,7 +1,7 @@
 function menus(rootState) {
     return [
         { subheader: "Main", group_permissions: [] },
-        { icon: "dashboard", text: "Dashboard", route: "/" },
+        { icon: "mdi-view-dashboard-outline", text: "Dashboard", route: "/" },
 
         // ===== //
 
@@ -9,26 +9,26 @@ function menus(rootState) {
 
         // #Autocrud#
 
-        { divider: true },
-        { subheader: "Settings", group_permissions: ["Admin"] },
+        // { divider: true },
+        // { subheader: "Settings", group_permissions: ["Admin"] },
+        // {
+        //     icon: "mdi-chart-box",
+        //     text: "Reports",
+        //     childs: [
+        //         {
+        //             icon: "mdi-account-group-outline",
+        //             text: " Users",
+        //             route: "/report/user",
+        //             can: "users-view",
+        //         },
+        //     ],
+        // },
         {
-            icon: "mdi-chart-box",
-            text: "Reports",
-            childs: [
-                {
-                    icon: "mdi-account-group-outline",
-                    text: " Users",
-                    route: "/report/user",
-                    can: "users-view",
-                },
-            ],
-        },
-        {
-            icon: "mdi-database",
+            icon: "mdi-database-outline",
             text: "Master Data",
             childs: [
                 {
-                    icon: "person",
+                    icon: "mdi-account-outline",
                     text: "Users",
                     route: "/users",
                     can: "users-view",
@@ -37,16 +37,16 @@ function menus(rootState) {
         },
         {
             icon: "mdi-cogs",
-            text: "Others",
+            text: "Settings",
             childs: [
                 {
-                    icon: "admin_panel_settings",
-                    text: "Roles & Permissions",
+                    icon: "mdi-shield-account-outline",
+                    text: "Permissions",
                     route: "/roles",
                     role: "Admin",
                 },
                 {
-                    icon: "notifications_active",
+                    icon: "mdi-bell-ring-outline",
                     text: "Notifications",
                     route: "/notifications",
                     can: "notification-view",
@@ -54,12 +54,12 @@ function menus(rootState) {
                         chip: rootState.auth.notifications.unRead.length,
                     },
                 },
-                {
-                    icon: "help",
-                    text: "Help",
-                    route: "/panduan",
-                    auth: true,
-                },
+                // {
+                //     icon: "mdi-help-circle-outline",
+                //     text: "Help",
+                //     route: "/panduan",
+                //     auth: true,
+                // },
                 // { icon: 'change_history', text: 'Activity Log', route: '/activity-log', can: 'activity-log-view' },
             ],
         },

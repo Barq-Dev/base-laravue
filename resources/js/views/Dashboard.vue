@@ -8,9 +8,6 @@
           </v-sheet>
         </v-flex>
 
-        <v-flex sm12 xs12 md12 lg12 class="py-5">
-          <v-divider></v-divider>
-        </v-flex>
 
         <!-- Counter -->
         <v-flex sm12 xs12 md3 lg3 v-for="i in counters" :key="i.id">

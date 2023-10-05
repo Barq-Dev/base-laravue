@@ -2,7 +2,7 @@
   <v-app>
     <Navbar v-if="$route.name != 'login'" />
 
-    <v-main>
+    <v-main class="grey lighten-3">
       <v-container grid-list-xs>
         <v-breadcrumbs :items="breadcrumbs" v-if="user.id && breadcrumbs.length">
           <template #item="{ item }">
