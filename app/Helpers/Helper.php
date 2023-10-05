@@ -17,7 +17,7 @@ if (!function_exists('auto_module')) {
     {
         write_file(
             resource_path('js/store/modules/theme/menu.js'),
-            "{ icon: 'help', text: '$module_name', route: '/" . \Str::kebab($module_name) . "', auth: true }, \n\t\t",
+            "{ icon: 'mdi-send-outline', text: '$module_name', route: '/" . \Str::kebab($module_name) . "', auth: true }, \n\t\t",
             '// #Autocrud#'
         );
         write_file(resource_path('js/router/routes.js'), "'$module_name', \n\t\t", '// #Autocrud#');
